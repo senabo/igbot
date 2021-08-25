@@ -343,9 +343,9 @@ def load_uuid_and_cookie(self, load_uuid=True, load_cookie=True):
                 self.session.cookies = requests.utils.cookiejar_from_dict(
                     data["cookie"]
                 )
-                cookie_username = self.cookie_dict["ds_user"]
-                assert cookie_username == self.username.lower()
-                self.cookie_dict["urlgen"]
+                # cookie_username = self.cookie_dict["ds_user"]
+                # assert cookie_username == self.username.lower()
+                # self.cookie_dict["urlgen"]
 
             if load_uuid:
                 self.logger.debug("Loading uuids")
